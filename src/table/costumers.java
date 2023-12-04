@@ -81,9 +81,10 @@ public class costumers extends javax.swing.JFrame {
         jPanel1.add(jB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 460, -1, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\Restaurant-Cropped-_0000_Wendys-Boot-Ranch-Palm-Harbor-FL-Exterior-Storefront (1).png")); // NOI18N
+        jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 660));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1510, 660));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 660));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

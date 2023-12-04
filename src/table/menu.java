@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package table;
 
-/**
- *
- * @author Win10
- */
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.*;
+
 public class menu extends javax.swing.JFrame {
 
     /**
@@ -32,87 +29,175 @@ public class menu extends javax.swing.JFrame {
         jFood = new javax.swing.JLabel();
         jDrinks = new javax.swing.JLabel();
         jDessert = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
-        jPanel10 = new javax.swing.JPanel();
-        jPanel11 = new javax.swing.JPanel();
-        jPanel12 = new javax.swing.JPanel();
-        jPanel14 = new javax.swing.JPanel();
-        jPanel13 = new javax.swing.JPanel();
-        jPanel15 = new javax.swing.JPanel();
-        jPanel16 = new javax.swing.JPanel();
-        jPanel38 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel48 = new javax.swing.JPanel();
-        jPanel49 = new javax.swing.JPanel();
-        jPanel50 = new javax.swing.JPanel();
-        jPanel51 = new javax.swing.JPanel();
-        jPanel52 = new javax.swing.JPanel();
-        jPanel53 = new javax.swing.JPanel();
-        jPanel54 = new javax.swing.JPanel();
-        jPanel55 = new javax.swing.JPanel();
-        jPanel56 = new javax.swing.JPanel();
-        jPanel57 = new javax.swing.JPanel();
-        jPanel18 = new javax.swing.JPanel();
-        jPanel19 = new javax.swing.JPanel();
-        jPanel20 = new javax.swing.JPanel();
-        jPanel21 = new javax.swing.JPanel();
-        jPanel22 = new javax.swing.JPanel();
-        jPanel23 = new javax.swing.JPanel();
-        jPanel24 = new javax.swing.JPanel();
-        jPanel25 = new javax.swing.JPanel();
-        jPanel26 = new javax.swing.JPanel();
-        jPanel27 = new javax.swing.JPanel();
-        jPanel28 = new javax.swing.JPanel();
-        jPanel29 = new javax.swing.JPanel();
-        jPanel30 = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jB3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jB4 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        movinText = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        jLabel39 = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel40 = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel41 = new javax.swing.JLabel();
+        jPanel12 = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel43 = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        jLabel44 = new javax.swing.JLabel();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        jPanel16 = new javax.swing.JPanel();
+        jLabel47 = new javax.swing.JLabel();
+        jPanel38 = new javax.swing.JPanel();
+        jLabel46 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel48 = new javax.swing.JPanel();
+        jPanel49 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
+        jPanel50 = new javax.swing.JPanel();
+        jLabel34 = new javax.swing.JLabel();
+        jPanel51 = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        jPanel52 = new javax.swing.JPanel();
+        jLabel36 = new javax.swing.JLabel();
+        jPanel53 = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
+        jPanel54 = new javax.swing.JPanel();
+        jLabel38 = new javax.swing.JLabel();
+        jPanel18 = new javax.swing.JPanel();
+        jPanel19 = new javax.swing.JPanel();
+        jLabel24 = new javax.swing.JLabel();
+        jPanel20 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jPanel21 = new javax.swing.JPanel();
+        jLabel26 = new javax.swing.JLabel();
+        jPanel22 = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
+        jPanel23 = new javax.swing.JPanel();
+        jLabel28 = new javax.swing.JLabel();
+        jPanel24 = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
+        jPanel28 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jPanel29 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jPanel30 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                WindowOpen(evt);
+            }
+        });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel6.setBackground(new java.awt.Color(0, 255, 255));
+        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 7, true));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jFood.setBackground(new java.awt.Color(255, 255, 255));
         jFood.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jFood.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\menu-removebg-preview.png")); // NOI18N
         jFood.setText("FOODS");
+        jFood.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         jFood.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jFoodMouseClicked(evt);
             }
         });
-        jPanel6.add(jFood, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 196, 118, -1));
+        jPanel6.add(jFood, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 118, -1));
 
         jDrinks.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jDrinks.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\drinks-removebg-preview.png")); // NOI18N
         jDrinks.setText("DRINKS");
+        jDrinks.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         jDrinks.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jDrinksMouseClicked(evt);
             }
         });
-        jPanel6.add(jDrinks, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 280, 118, 46));
+        jPanel6.add(jDrinks, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, 118, 46));
 
         jDessert.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jDessert.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\dessertss-removebg-preview.png")); // NOI18N
         jDessert.setText("DESSERT");
+        jDessert.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         jDessert.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jDessertMouseClicked(evt);
             }
         });
-        jPanel6.add(jDessert, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 367, 118, 46));
+        jPanel6.add(jDessert, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 118, 46));
+
+        jB3.setBackground(new java.awt.Color(204, 204, 204));
+        jB3.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        jB3.setText("CASH");
+        jB3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jB3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jB3ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jB3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 570, 130, 40));
+
+        jLabel3.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 14)); // NOI18N
+        jLabel3.setText("MODE OF PAYMENT:");
+        jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 180, 40));
+
+        jB4.setBackground(new java.awt.Color(204, 204, 204));
+        jB4.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        jB4.setText("E-PAY");
+        jB4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jB4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jB4ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 630, 130, 40));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\basket-cart-icon-27-removebg-preview.png")); // NOI18N
+        jLabel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
+        jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 60, 60));
+
+        jLabel15.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        jLabel15.setText("Check your order here");
+        jPanel6.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\ARSMOS__1_-removebg-preview.png")); // NOI18N
-        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, 120));
+        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, 120));
+
+        jPanel7.setBackground(new java.awt.Color(255, 204, 204));
+        jPanel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 204), 3, true));
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        movinText.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 14)); // NOI18N
+        movinText.setText("CLICK THE ICON TO ORDER: CLICK THE ICON TO ORDER:  CLICK THE ICON TO ORDER: ");
+        jPanel7.add(movinText, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 30));
+
+        jPanel6.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 1070, 80));
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 153, 153));
 
@@ -122,39 +207,84 @@ public class menu extends javax.swing.JFrame {
 
         jPanel9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 230, 230));
+
+        jLabel39.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\adobo new.jpg")); // NOI18N
+        jLabel39.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel9.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 160, 160));
+
+        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 230, 250));
 
         jPanel10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 230, 230));
+
+        jLabel40.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\bicol ex new.jpg")); // NOI18N
+        jLabel40.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel10.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 160, 160));
+
+        jPanel3.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 230, 250));
 
         jPanel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, 230, 230));
+
+        jLabel41.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\chicken curry new.jpg")); // NOI18N
+        jLabel41.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel11.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 160, 160));
+
+        jPanel3.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, 230, 250));
 
         jPanel12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 230, 230));
+
+        jLabel42.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\beef brocolli new.jpg")); // NOI18N
+        jLabel42.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel12.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 160, 160));
+
+        jPanel3.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 230, 250));
 
         jPanel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 230, 230));
+
+        jLabel43.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\pochero new.jpg")); // NOI18N
+        jLabel43.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel14.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 160, 160));
+
+        jPanel3.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 230, 250));
 
         jPanel13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 310, 230, 230));
+
+        jLabel44.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\roasted chicken new.jpg")); // NOI18N
+        jLabel44.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel13.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 160, 160));
+
+        jPanel3.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 310, 230, 250));
 
         jPanel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 230, 230));
+
+        jLabel45.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\roasted chickern.jpg")); // NOI18N
+        jLabel45.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel15.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, 160));
+
+        jPanel3.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 230, 250));
 
         jPanel16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 580, 230, 230));
+
+        jLabel47.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\rice new.jpg")); // NOI18N
+        jLabel47.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel16.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 160, 160));
+
+        jPanel3.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 580, 230, 250));
 
         jPanel38.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel38.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jPanel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 580, 230, 230));
+
+        jLabel46.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\menudo new.jpg")); // NOI18N
+        jLabel46.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel38.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 160, 160));
+
+        jPanel3.add(jPanel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 580, 230, 250));
 
         jTabbedPane1.addTab("tab2", jPanel3);
 
@@ -168,41 +298,59 @@ public class menu extends javax.swing.JFrame {
 
         jPanel49.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel49.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel48.add(jPanel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 230, 230));
+
+        jLabel33.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\bukojos.jpg")); // NOI18N
+        jLabel33.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel49.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
+
+        jPanel48.add(jPanel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 230, 250));
 
         jPanel50.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel50.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel48.add(jPanel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 230, 230));
+
+        jLabel34.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\coca.jpg")); // NOI18N
+        jLabel34.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel50.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
+
+        jPanel48.add(jPanel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 230, 250));
 
         jPanel51.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel51.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel48.add(jPanel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, 230, 230));
+
+        jLabel35.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\ICED TEA.jpg")); // NOI18N
+        jLabel35.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel51.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
+
+        jPanel48.add(jPanel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 230, 250));
 
         jPanel52.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel52.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel48.add(jPanel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 230, 230));
+
+        jLabel36.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\Pineapple-and-Ginger-Mojitos-square.jpg")); // NOI18N
+        jLabel36.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel52.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
+
+        jPanel48.add(jPanel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 230, 250));
 
         jPanel53.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel53.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel48.add(jPanel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 230, 230));
+
+        jLabel37.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\pepsi.jpg")); // NOI18N
+        jLabel37.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel53.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
+
+        jPanel48.add(jPanel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, 230, 250));
 
         jPanel54.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel54.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel48.add(jPanel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 310, 230, 230));
 
-        jPanel55.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
-        jPanel55.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel48.add(jPanel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 230, 230));
+        jLabel38.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\iced coffee.jpg")); // NOI18N
+        jLabel38.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel54.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
 
-        jPanel56.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
-        jPanel56.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel48.add(jPanel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 580, 230, 230));
+        jPanel48.add(jPanel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 310, 230, 250));
 
-        jPanel57.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
-        jPanel57.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel48.add(jPanel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 580, 230, 230));
-
-        jPanel4.add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 840));
+        jPanel4.add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 840));
 
         jTabbedPane1.addTab("tab3", jPanel4);
 
@@ -212,107 +360,143 @@ public class menu extends javax.swing.JFrame {
 
         jPanel19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel18.add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 230, 230));
+
+        jLabel24.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\tapioca ni gabo - Copy.jpg")); // NOI18N
+        jLabel24.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel19.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
+
+        jPanel18.add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 230, 250));
 
         jPanel20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel18.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 230, 230));
+
+        jLabel25.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\Mango-Graham-Cake-Mango-ni gabo.jpg")); // NOI18N
+        jLabel25.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel20.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
+
+        jPanel18.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 230, 250));
 
         jPanel21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel18.add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, 230, 230));
+
+        jLabel26.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\halo halo - Copy - Copy.jpg")); // NOI18N
+        jLabel26.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel21.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
+
+        jPanel18.add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 20, 230, 250));
 
         jPanel22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel18.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 230, 230));
+
+        jLabel27.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\salad ni gabo.jpg")); // NOI18N
+        jLabel27.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel22.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
+
+        jPanel18.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 230, 250));
 
         jPanel23.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel23.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel18.add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 230, 230));
+
+        jLabel28.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\cheesy-yema-cake-3-680x680.jpg")); // NOI18N
+        jLabel28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel23.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
+
+        jPanel18.add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 230, 250));
 
         jPanel24.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
         jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel18.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 310, 230, 230));
 
-        jPanel25.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
-        jPanel25.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel18.add(jPanel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 230, 230));
+        jLabel29.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\creamy-coffee-jelly-2-680x680 ni gabo.jpg")); // NOI18N
+        jLabel29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 153, 153), 5, true));
+        jPanel24.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 150, 160));
 
-        jPanel26.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
-        jPanel26.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel18.add(jPanel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 580, 230, 230));
-
-        jPanel27.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 102, 255), 5, true));
-        jPanel27.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel18.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 580, 230, 230));
+        jPanel18.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 310, 230, 250));
 
         jTabbedPane1.addTab("tab2", jPanel18);
 
         jPanel28.setBackground(new java.awt.Color(255, 153, 153));
         jPanel28.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 204, 204), 6));
         jPanel28.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane2.setViewportView(jTextArea1);
+
+        jPanel28.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 300, 600));
+
         jTabbedPane1.addTab("tab2", jPanel28);
 
         jPanel29.setBackground(new java.awt.Color(255, 153, 153));
         jPanel29.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 204, 204), 6));
         jPanel29.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel7.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 36)); // NOI18N
+        jLabel7.setText("E- PAYMENT:");
+        jPanel29.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, -20, 480, 100));
+
+        jLabel8.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 18)); // NOI18N
+        jLabel8.setText("G-CASH:");
+        jPanel29.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 100, 40));
+
+        jLabel9.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 18)); // NOI18N
+        jLabel9.setText("MAYA:");
+        jPanel29.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 120, 80, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\Screenshot_20231130_013912_Maya.jpg")); // NOI18N
+        jLabel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        jPanel29.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 160, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Pictures\\Screenshot_20231130_013949_GCash.jpg")); // NOI18N
+        jLabel10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        jPanel29.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, -1, 390));
+
+        jLabel12.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 24)); // NOI18N
+        jLabel12.setText("SCAN TO PAY!!!!");
+        jPanel29.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 600, 260, 90));
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel13.setText("Thank you for ordering!!!");
+        jPanel29.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 660, 220, -1));
+
         jTabbedPane1.addTab("tab2", jPanel29);
 
         jPanel30.setBackground(new java.awt.Color(255, 153, 153));
         jPanel30.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 204, 204), 6));
         jPanel30.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 18)); // NOI18N
+        jLabel5.setText("If you want to pay in cash, just call the crew. thank you");
+        jPanel30.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 730, 70));
+
+        jLabel4.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 36)); // NOI18N
+        jLabel4.setText("JUST CALL THE CREW !!!");
+        jPanel30.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 530, 90));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Win10\\Downloads\\ARSMOS__1_-removebg-preview.png")); // NOI18N
+        jPanel30.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 660, 280));
+
         jTabbedPane1.addTab("tab2", jPanel30);
 
-        jPanel6.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(262, 6, 920, 880));
-
-        jPanel7.setBackground(new java.awt.Color(255, 204, 204));
-        jPanel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 204), 3, true));
-        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel1.setText("CLICK THE ICON TO ORDER: CLICK THE ICON TO ORDER: CLICK THE ICON TO ORDER: CLICK THE ICON TO ORDER: CLICK THE ICON TO ORDER:");
-        jPanel7.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 920, 20));
-
-        jPanel6.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 920, 40));
-
-        jB3.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
-        jB3.setText("CASH");
-        jB3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jB3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jB3ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jB3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 510, 130, 40));
-
-        jLabel3.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 14)); // NOI18N
-        jLabel3.setText("MODE OF PAYMENT:");
-        jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 180, 40));
-
-        jB4.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
-        jB4.setText("E-PAY");
-        jB4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jB4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jB4ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 580, 130, 40));
+        jPanel6.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 31, 1060, 910));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 1317, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 151, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 943, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 75, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(jPanel1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 890));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1330, 960));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -330,12 +514,54 @@ public class menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jDessertMouseClicked
 
     private void jB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB3ActionPerformed
-       
+       jTabbedPane1.setSelectedIndex(5);
     }//GEN-LAST:event_jB3ActionPerformed
 
     private void jB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB4ActionPerformed
-        // TODO add your handling code here:
+        jTabbedPane1.setSelectedIndex(4);
     }//GEN-LAST:event_jB4ActionPerformed
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+        jTabbedPane1.setSelectedIndex(3);
+    }//GEN-LAST:event_jLabel14MouseClicked
+
+    private void WindowOpen(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_WindowOpen
+        // Window Event - Opened:
+        //set Boundary
+        final int MAX_X = 950;
+        final int MIN_X = 30;
+
+        Thread animation = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int x = 20;
+                int y = 10;  //label start positions
+                boolean checked = true;
+                while (true) {
+                    if (checked) {
+                        movinText.setLocation(x, y);
+                        x += 10;
+                    } else {
+                        movinText.setLocation(x, y);
+                        x -= 10;
+                    }
+                    if(x>MAX_X){
+                        checked=false;
+                        x=400; //reset the X value
+                    }
+                    if(x<MIN_X){
+                        checked= true;
+                    }
+                    try {
+                        Thread.sleep(200);
+                    } catch (Exception e) {
+
+                    }
+                }
+            }
+        });
+        animation.start();
+    }//GEN-LAST:event_WindowOpen
 
     /**
      * @param args the command line arguments
@@ -378,9 +604,41 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JLabel jDessert;
     private javax.swing.JLabel jDrinks;
     private javax.swing.JLabel jFood;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -396,9 +654,6 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
-    private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel26;
-    private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel28;
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
@@ -412,13 +667,13 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel52;
     private javax.swing.JPanel jPanel53;
     private javax.swing.JPanel jPanel54;
-    private javax.swing.JPanel jPanel55;
-    private javax.swing.JPanel jPanel56;
-    private javax.swing.JPanel jPanel57;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel movinText;
     // End of variables declaration//GEN-END:variables
 }
